@@ -64,7 +64,7 @@ Traffic to these services should be carefully monitored. To this end, we have im
 #### Excessive HTTP Errors
 
 "Excessive HTTP Errors" is implemented as follows:
-  - **Metric**: packetbeat-* - count of http.response.status_code
+  - **Metric**: packetbeat-* - count of *http.response.status_code
   - **Threshold**: 400 over 5 minutes
   - **Vulnerability Mitigated**: Brute Force Attacks (Error codes over 400 and below 500 indicate a client error response)
   - **Reliability**: While it is possible to get an occasional 400 error, having multiple 400+ errors in succession could indicate a brute force attack. I would say this is a high reliability alert.
