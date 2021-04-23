@@ -69,11 +69,12 @@ Traffic to these services should be carefully monitored. To this end, we have im
   - **Vulnerability Mitigated**: Brute Force Attacks (Error codes over 400 and below 500 indicate a client error response)
   - **Reliability**: While it is possible to get an occasional 400 error, having multiple 400+ errors in succession could indicate a brute force attack. I would say this is a high reliability.
 
-#### Name of Alert 2
-Alert 2 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
+#### Name of HTTP Request Size
+
+"HTTP Request Size" is implemented as follows:
+  - **Metric**: packetbeat-*
+  - **Threshold**: 3500
+  - **Vulnerability Mitigated**: Monitoring for uploading payloads, specifically .php, .sh, or .py scripts which would be used to initiate a reverse or bind shell.
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 
 #### Name of Alert 3
