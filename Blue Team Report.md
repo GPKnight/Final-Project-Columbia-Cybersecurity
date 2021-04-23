@@ -11,12 +11,15 @@
 _TODO: Fill out the information below._
 
 The following machines were identified on the network:
-- Name of VM 1
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Name of VM 2
-  - **Operating System**:
+- Name of VM 1 : Host Machine
+  - **Operating System**: Microsoft Windows
+  - **Purpose**: Provide the virtual environment for hypervisor to manage all the lab virtual machines.
+  - **IP Address**: 192.168.1.1
+  - **Open Ports**: 22 - OpenSSH 7.61pl Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+                    80 - Apache httpd 2.4.29
+  
+- Name of VM 2 : Kali Machine
+  - **Operating System**: 
   - **Purpose**:
   - **IP Address**:
 - Etc.
