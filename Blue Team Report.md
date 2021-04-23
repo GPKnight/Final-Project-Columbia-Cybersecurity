@@ -21,31 +21,31 @@ The following machines were identified on the network:
   - **Operating System**: Linux
   - **Purpose**: The virtual machine which all attacks will originate from.
   - **IP Address**: 192.168.1.8
- -  **Open Ports**: 22 - OpenSSH 7.8pl Debian 1 (protocol 2.0)
+  -  **Open Ports**: 22 - OpenSSH 7.8pl Debian 1 (protocol 2.0)
 
 - Name of VM 3 : ELK
   - **Operating System**: Linux
   - **Purpose**: The machine which collects metric, packet, and file beat information, accessed via web browser from the Host Machine
   - **IP Address**: 192.168.1.100
- -  **Open Ports**: 22 - OpenSSH 7.6pl Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0) 9200 - rtsp
+  -  **Open Ports**: 22 - OpenSSH 7.6pl Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0) 9200 - rtsp
 
 - Name of VM 4 : Capstone
   - **Operating System**: Linux
   - **Purpose**: The machine which Kibana alerts would be tested on to confirm proper configuration.
   - **IP Address**: 192.168.1.105
- -  **Open Ports**:  22 - OpenSSH 7.61pl Ubuntu 4 (Ubuntu Linux; protocol 2.0) 80 - Apache httpd 2.4.29
+  -  **Open Ports**:  22 - OpenSSH 7.61pl Ubuntu 4 (Ubuntu Linux; protocol 2.0) 80 - Apache httpd 2.4.29
 
 - Name of VM 5 : Target 1
   - **Operating System**: Linux
   - **Purpose**: The primary machine to be compromised in the attack.
   - **IP Address**: 192.168.1.110
- -  **Open Ports**:  22 - OpenSSH 7.61pl Ubuntu 4 (Ubuntu Linux; protocol 2.0) 80 - Apache httpd 2.4.29
+  -  **Open Ports**:  22 - OpenSSH 7.61pl Ubuntu 4 (Ubuntu Linux; protocol 2.0) 80 - Apache httpd 2.4.29
 
 - Name of VM 6 : Target 2
   - **Operating System**: Linux
   - **Purpose**: The machine which Kibana alerts would be tested on to confirm proper configuration.
   - **IP Address**: 192.168.1.115
- -  **Open Ports**:  22 - OpenSSH 7.61pl Ubuntu 4 (Ubuntu Linux; protocol 2.0) 80 - Apache httpd 2.4.29
+  -  **Open Ports**:  22 - OpenSSH 7.61pl Ubuntu 4 (Ubuntu Linux; protocol 2.0) 80 - Apache httpd 2.4.29
 
 ### Description of Targets
 _TODO: Answer the questions below._
