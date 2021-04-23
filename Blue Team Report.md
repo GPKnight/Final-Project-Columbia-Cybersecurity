@@ -51,7 +51,7 @@ The following machines were identified on the network:
 
 The target of these attacks were: `Target 1` 192.168.1.110.
 
-Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. This target also ghas two vulnerable SAMBA ports, susceptible (based on SMB-VULN* scan) to DdOS (denial-of-service) attacks. 
+Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. This target also ghas two vulnerable SAMBA ports, susceptible (based on SMB-VULN* scan) to dDOS (denial-of-service) attacks. 
 
 'Target 2' 192.168.1.115.
 
@@ -61,14 +61,13 @@ Target 2 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
-#### Name of Alert 1
-_TODO: Replace `Alert 1` with the name of the alert._
+#### Excessive HTTP Errors
 
-Alert 1 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+"Excessive HTTP Errors" is implemented as follows:
+  - **Metric**: packetbeat-*
+  - **Threshold**: 400
+  - **Vulnerability Mitigated**: Brute Force Attacks (Error codes over 400 and below 500 indicate a client error response)
+  - **Reliability**: While it is possible to get an occasional 400 error, having multiple 400+ errors in succession could indicate a brute force attack. I would say this is a high reliability.
 
 #### Name of Alert 2
 Alert 2 is implemented as follows:
