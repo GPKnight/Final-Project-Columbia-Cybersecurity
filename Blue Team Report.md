@@ -37,9 +37,9 @@ The following machines were identified on the network:
 
 - Name of VM 5 : Target 1
   - **Operating System**: Linux
-  - **Purpose**: The primary machine to be compromised in the attack.
+  - **Purpose**: The primary machine to attempt to compromise from the Kali machine.
   - **IP Address**: 192.168.1.110
-  -  **Open Ports**:  22 - OpenSSH 7.61pl Ubuntu 4 (Ubuntu Linux; protocol 2.0) 80 - Apache httpd 2.4.29
+  -  **Open Ports**:  22 - OpenSSH 6.7pl Debian 5+deb8u4 (protocol 2.0) 80 - Apache httpd 2.4.10 111 - 2-4 (RPC #100000) 139 - netbios-ssn Samba smbd 3.X - 4. X (workgroup: WORKGROUP) 445 - netbios-ssn Samba smbd 3.X - 4. X (workgroup: WORKGROUP)
 
 - Name of VM 6 : Target 2
   - **Operating System**: Linux
