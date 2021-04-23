@@ -79,7 +79,7 @@ Traffic to these services should be carefully monitored. To this end, we have im
 
 #### Name of CPU Usage Monitor
 
-Alert 3 is implemented as follows:
+CPU Usage Monitor is implemented as follows:
   - **Metric**: metricbeat-* - max of *system.process.cpu.total.pct*
   - **Threshold**: 0.5 over 5 minutes
   - **Vulnerability Mitigated**: TODO
@@ -87,11 +87,12 @@ Alert 3 is implemented as follows:
 
 #### Name of Port Scan Monitor
 
-Alert 4 is implemented as follows:
+Port Scan Monitor is implemented as follows:
   - **Metric**: metricbeat-* sum of *destination.port*
   - **Threshold**: 1000 over 1 minute
   - **Vulnerability Mitigated**: Identifying a port scan against your server
   - **Reliability**: Port scans may be conducted for non-malicious purposes therefore this alert may be responsible for false-positives. This is a medium reliability alert.
+
 
 ### Suggestions for Going Further (Optional)
 _TODO_: 
