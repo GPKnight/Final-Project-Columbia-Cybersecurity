@@ -39,20 +39,23 @@ The following machines were identified on the network:
   - **Operating System**: Linux
   - **Purpose**: The primary machine to attempt to compromise from the Kali machine.
   - **IP Address**: 192.168.1.110
-  -  **Open Ports**:  22 - OpenSSH 6.7pl Debian 5+deb8u4 (protocol 2.0) 80 - Apache httpd 2.4.10 111 - 2-4 (RPC #100000) 139 - netbios-ssn Samba smbd 3.X - 4. X (workgroup: WORKGROUP) 445 - netbios-ssn Samba smbd 3.X - 4. X (workgroup: WORKGROUP)
+  -  **Open Ports**:  22 - OpenSSH 6.7pl Debian 5+deb8u4 (protocol 2.0) 80 - Apache httpd 2.4.10 ((Debian)) 111 - 2-4 (RPC #100000) 139 - netbios-ssn Samba smbd 3.X - 4. X (workgroup: WORKGROUP) 445 - netbios-ssn Samba smbd 3.X - 4. X (workgroup: WORKGROUP)
 
 - Name of VM 6 : Target 2
   - **Operating System**: Linux
   - **Purpose**: The machine which Kibana alerts would be tested on to confirm proper configuration.
   - **IP Address**: 192.168.1.115
-  -  **Open Ports**:  22 - OpenSSH 7.61pl Ubuntu 4 (Ubuntu Linux; protocol 2.0) 80 - Apache httpd 2.4.29
+  -  **Open Ports**:  22 - OpenSSH 7.61pl Ubuntu 4 (Ubuntu Linux; protocol 2.0) 80 - Apache httpd 2.4.10 ((Debian)) 111 - 2-4 (RPC #100000)
 
 ### Description of Targets
-_TODO: Answer the questions below._
 
-The target of this attack was: `Target 1` (TODO: IP Address).
+The target of these attacks were: `Target 1` 192.168.1.110.
 
-Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
+Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. This target also ghas two vulnerable SAMBA ports, susceptible (based on SMB-VULN* scan) to DdOS (denial-of-service) attacks. 
+
+'Target 2' 192.168.1.115.
+
+Target 2 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
 ### Monitoring the Targets
 
