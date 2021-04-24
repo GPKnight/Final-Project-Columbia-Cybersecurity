@@ -51,7 +51,7 @@ The following machines were identified on the network:
 
 The target of these attacks were: `Target 1` 192.168.1.110.
 
-Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. This target also ghas two vulnerable SAMBA ports, susceptible (based on SMB-VULN* scan) to dDOS (denial-of-service) attacks. 
+Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. This target also has two vulnerable SAMBA ports, susceptible (based on SMB-VULN* scan) to dDOS (denial-of-service) attacks. 
 
 'Target 2' 192.168.1.115.
 
@@ -82,8 +82,8 @@ Traffic to these services should be carefully monitored. To this end, we have im
 "CPU Usage Monitor" is implemented as follows:
   - **Metric**: metricbeat-* - max of *system.process.cpu.total.pct*
   - **Threshold**: 0.5 over 5 minutes
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Vulnerability Mitigated**: Having high CPU utilization can be an indication of malicious activity over the network, for example, meterpreter shell sessions run untirely off of memory.
+  - **Reliability**: While high CPU usage may be an indicator of malicious activity, it can just indicate normal processes occuring. This alert should be considered low reliability as a high number of false-positives would be expected unless a very finite threshold based on server activity was established ahead of time.
 
 #### Name of Port Scan Monitor
 
@@ -94,17 +94,3 @@ Traffic to these services should be carefully monitored. To this end, we have im
   - **Reliability**: Port scans may be conducted for non-malicious purposes therefore this alert may be responsible for false-positives. This is a medium reliability alert.
 
 
-### Suggestions for Going Further (Optional)
-_TODO_: 
-- Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
-
-The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
-- Vulnerability 1
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-- Vulnerability 2
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-- Vulnerability 3
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
