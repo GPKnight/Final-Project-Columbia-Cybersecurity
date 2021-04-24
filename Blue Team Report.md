@@ -69,15 +69,15 @@ Traffic to these services should be carefully monitored. To this end, we have im
   - **Vulnerability Mitigated**: Brute Force Attacks (Error codes over 400 and below 500 indicate a client error response)
   - **Reliability**: http.response.status_code is returned whenever a request is sent to the site.  Normally these requests consist of GET or POST types.  Depending on the request, a status code is returned indicating success or failure of the request.  When a high number of status codes are returned in a short window of time, that may be an indication of a brute force / password attack. This is a highly reliable alert and should not return a high number of fasle-positives.
 
-#### Name of HTTP Request Size
+#### HTTP Request Size
 
 "HTTP Request Size" is implemented as follows:
   - **Metric**: packetbeat-* - sum of *http.request.bytes*
   - **Threshold**: 3500 over 1 minute
   - **Vulnerability Mitigated**: Monitoring for uploading payloads, specifically .php, .sh, or .py scripts which would be used to initiate a reverse or bind shell.
-  - **Reliability**: Per [this Google Whitepaper](https://dev.chromium.org/spdy/spdy-whitepaper) "...the typical http request header ranges from 200 bytes to 2KB. However, typical header size of 700-800 bytes is common." If your website was not secure (HTTP vs HTTPS) a malicious actor could use POST or PUT requests to 
+  - **Reliability**: Per [this Google Whitepaper](https://dev.chromium.org/spdy/spdy-whitepaper) "...the typical http request header ranges from 200 bytes to 2KB. However, typical header size of 700-800 bytes is common." If your website was not secure (HTTP vs HTTPS) a malicious actor could use POST or PUT requests to pass on harmful code / commands to a vulnerable server. Given that the normal request size is much lower than the threshold, this is a moderately reliable alert which should produce a low number of false-positives. Like other alerts in this report, establishing a threshold based on examination of actual traffic would greatly improve the reliability.
 
-#### Name of CPU Usage Monitor
+#### CPU Usage Monitor
 
 "CPU Usage Monitor" is implemented as follows:
   - **Metric**: metricbeat-* - max of *system.process.cpu.total.pct*
@@ -85,7 +85,7 @@ Traffic to these services should be carefully monitored. To this end, we have im
   - **Vulnerability Mitigated**: Having high CPU utilization can be an indication of malicious activity over the network, for example, meterpreter shell sessions run untirely off of memory.
   - **Reliability**: While high CPU usage may be an indicator of malicious activity, it can just indicate normal processes occuring. This alert should be considered low reliability as a high number of false-positives would be expected unless a very finite threshold based on server activity was established ahead of time.
 
-#### Name of Port Scan Monitor
+#### Port Scan Monitor
 
 "Port Scan Monitor" is implemented as follows:
   - **Metric**: metricbeat-* sum of *destination.port*
