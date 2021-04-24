@@ -8,12 +8,19 @@
 ### Exposed Services
 _TODO: Fill out the information below._
 
-Nmap scan results for each machine reveal the below services and OS details:
+Nmap scan results for overall network:
 
 ```bash
 $ [nmap 192.168.1.0-255]
 ```
 [IP Network Results](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/nmapnetwork.png)
+
+Nmap scan results for each Target 1 reveal the below services and OS details:
+
+```bash
+$ [nmap -sV 192.168.1.110]
+```
+[Target 1 Scan](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/nmaptarget1.png)
 
 This scan identifies the services below as potential points of entry:
 - Target 1
