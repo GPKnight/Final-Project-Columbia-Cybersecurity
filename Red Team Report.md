@@ -11,7 +11,7 @@ _TODO: Fill out the information below._
 Nmap scan results for each machine reveal the below services and OS details:
 
 ```bash
-$ [nmap 192.168.1.0-255](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/nmapnetwork.png)
+$ [nmap 192.168.1.0-255](/images/nmapnetwork.png)
 ```
 
 This scan identifies the services below as potential points of entry:
