@@ -49,6 +49,7 @@ The following vulnerabilities were identified on each target:
   - [Vital information unprotected - MySQL Database Config File](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/mysqlconfig.png)
   - [Password Hashes Accessible: MySQL Database](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/passwordhashes.png)       
   - [Samba Ports Subject to dDOS Attack: SMB-Vuln Scan](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/smbvuln.png)
+  - [Vulnerable User with Sudo Access](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/rootescalation.png)
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
