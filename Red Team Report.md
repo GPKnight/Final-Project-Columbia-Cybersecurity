@@ -45,9 +45,10 @@ _TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 
 The following vulnerabilities were identified on each target:
 - Target 1
-  - [Weak SSH Password](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/sshmichael.png) 
-  - Critical
-  - Vulnerabilities
+  - [Weak SSH Password: Username / Password "michael"](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/sshmichael.png) 
+  - [Vital information unprotected - MySQL Database Config File](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/mysqlconfig.png)
+  - [Password Hashes Accessible: MySQL Database](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/passwordhashes.png)       
+  - [Samba Ports Subject to dDOS Attack: SMB-Vuln Scan](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/smbvuln.png)
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
