@@ -67,7 +67,7 @@ Traffic to these services should be carefully monitored. To this end, we have im
   - **Metric**: packetbeat-* - count of *http.response.status_code*
   - **Threshold**: 400 over 5 minutes
   - **Vulnerability Mitigated**: Brute Force Attacks (Error codes over 400 and below 500 indicate a client error response)
-  - **Reliability**: While it is possible to get an occasional 400 error, having multiple 400+ errors in succession could indicate a brute force attack. I would say this is a high reliability alert.
+  - **Reliability**: http.response.status_code is returned whenever a request is sent to the site.  Normally these requests consist of GET or POST types.  Depending on the request, a status code is returned indicating success or failure of the request.  When a high number of status codes are returned in a short window of time, that may be an indication of a brute force / password attack. This is a highly reliable alert and should not return a high number of fasle-positives.
 
 #### Name of HTTP Request Size
 
@@ -75,11 +75,11 @@ Traffic to these services should be carefully monitored. To this end, we have im
   - **Metric**: packetbeat-* - sum of *http.request.bytes*
   - **Threshold**: 3500 over 1 minute
   - **Vulnerability Mitigated**: Monitoring for uploading payloads, specifically .php, .sh, or .py scripts which would be used to initiate a reverse or bind shell.
-  - **Reliability**: The webserver in question is a Security company website that only has a blog post submittal page. I would think once a standard is established for the typical blog post packet size, a threshhold could be tweaked so that false positives are minimal. Once a baseline is established, this alert should be highly reliable.
+  - **Reliability**: Per [this Google Whitepaper](https://dev.chromium.org/spdy/spdy-whitepaper) "...the typical http request header ranges from 200 bytes to 2KB. However, typical header size of 700-800 bytes is common." If your website was not secure (HTTP vs HTTPS) a malicious actor could use POST or PUT requests to 
 
 #### Name of CPU Usage Monitor
 
-CPU Usage Monitor is implemented as follows:
+"CPU Usage Monitor" is implemented as follows:
   - **Metric**: metricbeat-* - max of *system.process.cpu.total.pct*
   - **Threshold**: 0.5 over 5 minutes
   - **Vulnerability Mitigated**: TODO
@@ -87,7 +87,7 @@ CPU Usage Monitor is implemented as follows:
 
 #### Name of Port Scan Monitor
 
-Port Scan Monitor is implemented as follows:
+"Port Scan Monitor" is implemented as follows:
   - **Metric**: metricbeat-* sum of *destination.port*
   - **Threshold**: 1000 over 1 minute
   - **Vulnerability Mitigated**: Identifying a port scan against your server
