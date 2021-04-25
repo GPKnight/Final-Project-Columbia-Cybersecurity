@@ -41,7 +41,7 @@ This scan identifies the services below as potential points of entry:
   - HTTP - Apache Web Server (Port 80)
 
 The following vulnerabilities were identified on each target:
-- Target 1
+- Target 1 
   - [Weak SSH Password: Username / Password "michael"](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/sshmichael.png) 
   - [Vital information unprotected - MySQL Database Config File](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/mysqlconfig.png)
   - [Password Hashes Accessible: MySQL Database](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/passwordhashes.png)       
@@ -58,7 +58,7 @@ The following vulnerabilities were identified on each target:
 ### Exploitation
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
-- Target 1
+- Target 1 - [Raven One](https://blog.barradell-johns.com/index.php/2018/12/17/raven-one-writeup/)
   - `flag1.txt`: `b9bbcb33e11b80be759c4e844862482d`  [Target 1 Flag 1](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/target1flag1.png)
     - **Exploit Used**
       - Vulnerable information stored unprotected
@@ -77,11 +77,11 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - sudo python -c 'import pty;pty.spawn("/bin/bash")'
 
 The Red Team was able to penetrate `Target 2` and retrieve the following confidential data:
-- Target 2
-  - `flag1.txt`: _TODO: Insert `flag1.txt` hash value_
+- Target 2 - [Raven 2](https://www.secjuice.com/raven-2-write/) 
+  - `flag1.txt`: `a2c1f66d2b8051bd3a5874b5b6e43e21` [Target 2 Flag 1](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target2Flag1.png)
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - Directory enumeration using GoBuster
+      - gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt dir -u http://192.168.1.115
   - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
