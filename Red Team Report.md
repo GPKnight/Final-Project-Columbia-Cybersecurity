@@ -59,14 +59,14 @@ The following vulnerabilities were identified on each target:
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: `b9bbcb33e11b80be759c4e844862482d`  [Flag 1](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/target1flag1.png)
+  - `flag1.txt`: `b9bbcb33e11b80be759c4e844862482d`  [Target 1 Flag 1](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/target1flag1.png)
     - **Exploit Used**
       - Vulnerable information stored unprotected
       - grep "flag"
-  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
+  - `flag2.txt`: `fc3fd58dcdad9ab23faca6e9a36e581c` [Target 1 Flag 2](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/target1flag2.png)
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - Very low strength password allowing immediate ssh into target machine.
+      - ssh michael@192.168.1.110 password: michael
   - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
