@@ -53,7 +53,7 @@ The following vulnerabilities were identified on each target:
   - [Username Enumeration of Wordpress](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/wpscanusers.png)
 
 - Target 2
-  - [open port]  
+  - [Directory Enumeration (using GoBuster)](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/T2Gobuster.png)  
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
