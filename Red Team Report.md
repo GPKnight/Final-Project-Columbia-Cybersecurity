@@ -54,7 +54,7 @@ The following vulnerabilities were identified on each target:
   - [Directory Enumeration (using GoBuster)](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/T2Gobuster.png)
   - [Storing Critical Information (Flag 1) Within Accessible Directory](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target2Flag1.png)
   - [Subject to Backdoor code execution, initiating a reverse shell](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/ReverseShell.png)
-  - [Using the reverse shell to exploit a vulnerability in the mysql database](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target2MySqlExploit.png)
+  - [Using the reverse shell to exploit a vulnerability in the mysql database to gain Root Access](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target2MySqlExploit.png)
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
