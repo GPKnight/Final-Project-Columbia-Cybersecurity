@@ -6,7 +6,6 @@
 - Exploitation
 
 ### Exposed Services
-_TODO: Fill out the information below._
 
 Nmap scan results for overall network:
 
@@ -56,17 +55,14 @@ The following vulnerabilities were identified on each target:
   - [Subject to Backdoor code execution, initiating a reverse shell](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/ReverseShell.png)
   - [Using the reverse shell to exploit a vulnerability in the mysql database to gain Root Access](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target2MySqlExploit.png)
 
-_TODO: Include vulnerability scan results to prove the identified vulnerabilities._
-
 ### Exploitation
-_TODO: Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: _TODO: Insert `flag1.txt` hash value_
+  - `flag1.txt`: `b9bbcb33e11b80be759c4e844862482d`  [Flag 1](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/target1flag1.png)
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - Vulnerable information stored unprotected
+      - grep "flag"
   - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
