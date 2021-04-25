@@ -93,4 +93,4 @@ The Red Team was able to penetrate `Target 2` and retrieve the following confide
   - `flag4.txt`: `df2bc5e951d91581467bb9a2a8ff4425` [Target 2 Flag 4](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target3Flag4.png) 
     - **Exploit Used**
       - MySQL database exploit 1518.c
-      - [Instructions](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target2RootInstructions.png)
+      - [Instructions](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/RootInstructions.png)
