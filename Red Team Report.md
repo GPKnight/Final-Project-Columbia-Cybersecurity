@@ -81,16 +81,16 @@ The Red Team was able to penetrate `Target 2` and retrieve the following confide
   - `flag1.txt`: `a2c1f66d2b8051bd3a5874b5b6e43e21` [Target 2 Flag 1](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target2Flag1.png)
     - **Exploit Used**
       - Directory enumeration using GoBuster
-      - gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt dir -u http://192.168.1.115
-  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
+      - gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt dir -u http://192.168.1.115  
+  - `flag2.txt`: `6a8ed560f0b5358ecf844108048eb337` [Target 2 Flag 2](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target2Flag2.png)
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
-  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
+      - Backdoor bash script reverse shell
+      - bash [exploit.sh](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/exploitsh.png)
+  - `flag3.txt`: `a0f568aa9de277887f37730d71520d9b` [Target 2 Flag 3](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target2Flag3.png)
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
-  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
+      - Unsecure image file
+      - scp image back to kali machine to open in viewer
+  - `flag4.txt`: `df2bc5e951d91581467bb9a2a8ff4425` [Target 2 Flag 4](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target3Flag4.png) 
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - MySQL database exploit 1518.c
+      - [Instructions](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target2RootInstructions.png)
