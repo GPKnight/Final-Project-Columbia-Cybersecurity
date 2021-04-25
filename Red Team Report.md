@@ -50,7 +50,10 @@ The following vulnerabilities were identified on each target:
   - [Password Hashes Accessible: MySQL Database](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/passwordhashes.png)       
   - [Samba Ports Subject to dDOS Attack: SMB-Vuln Scan](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/smbvuln.png)
   - [Vulnerable User with Sudo Access](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/rootescalation.png)
-  - [Usernam Enumeration of Wordpress](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/wpscanusers.png)
+  - [Username Enumeration of Wordpress](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/wpscanusers.png)
+
+- Target 2
+  - [open port]  
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
