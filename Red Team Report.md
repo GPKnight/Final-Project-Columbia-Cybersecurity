@@ -67,16 +67,16 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - **Exploit Used**
       - Very low strength password allowing immediate ssh into target machine.
       - ssh michael@192.168.1.110 password: michael
-  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
+  - `flag3.txt`: `afc01ab56b50591e7dccf93122770cd2` [Target 1 Flag 3](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/target1flag3.png)
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
-  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
+      - Unsecure database credentials
+      - mysql --username=root --password=R@v3nSecurity
+  - `flag4.txt`: `715dea6c055b9fe3337544932f2941ce` [Target 1 Flag 4](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/target1flag4.png)
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - Sudo python access for lower level user
+      - sudo python -c 'import pty;pty.spawn("/bin/bash")'
 
-The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
+The Red Team was able to penetrate `Target 2` and retrieve the following confidential data:
 - Target 2
   - `flag1.txt`: _TODO: Insert `flag1.txt` hash value_
     - **Exploit Used**
