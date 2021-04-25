@@ -41,8 +41,6 @@ This scan identifies the services below as potential points of entry:
   - SSH (Port 22)
   - HTTP - Apache Web Server (Port 80)
 
-_TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
-
 The following vulnerabilities were identified on each target:
 - Target 1
   - [Weak SSH Password: Username / Password "michael"](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/sshmichael.png) 
@@ -53,7 +51,9 @@ The following vulnerabilities were identified on each target:
   - [Username Enumeration of Wordpress](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/wpscanusers.png)
 
 - Target 2
-  - [Directory Enumeration (using GoBuster)](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/T2Gobuster.png)  
+  - [Directory Enumeration (using GoBuster)](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/T2Gobuster.png)
+  - [Storing Critical Information (Flag 1) Within Accessible Directory](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/Target2Flag1.png)
+  - [Subject to Backdoor code execution, initiating a reverse shell](https://github.com/GPKnight/Final-Project-Columbia-Cybersecurity/blob/main/Images/ReverseShell.png)
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
