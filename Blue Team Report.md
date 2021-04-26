@@ -43,7 +43,7 @@ The following machines were identified on the network:
 
 - Name of VM 6 : Target 2
   - **Operating System**: Linux
-  - **Purpose**: The machine which Kibana alerts would be tested on to confirm proper configuration.
+  - **Purpose**: The secondary machine to attempt to compromise from the Kali machine.
   - **IP Address**: 192.168.1.115
   -  **Open Ports**:  22 - OpenSSH 7.61pl Ubuntu 4 (Ubuntu Linux; protocol 2.0) 80 - Apache httpd 2.4.10 ((Debian)) 111 - 2-4 (RPC #100000)
 
